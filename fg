@@ -1,0 +1,10 @@
+$table->string('localisation');
+$table->integer('telephone')->unique();
+$table->string('description');
+$table->float('prix');
+$table->string('matiere');
+$table->string('classe');
+$table->double('etat');
+$table->string('categorire');
+$table->foreignId('user_id');
+$table->string('confirmer')->nullable();
